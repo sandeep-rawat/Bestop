@@ -1,0 +1,133 @@
+@font-face{
+  font-family: "Eurosti";
+  src: url("../fonts/Eurosti.eot");
+  src: local("â˜º"), url("../fonts/Eurosti.woff") format("woff"), url("../fonts/Eurosti.ttf") format("truetype");
+}
+
+body, input, button, select, textarea, h1, h2, h3, h4{
+  font-family:Eurosti,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar {
+  background-color:#FFF;
+  .logo{
+    max-width:100%;
+    height:5em;
+    margin:.25em 0;
+  }
+  .nav {
+    padding-top:2em;
+  }
+}
+.main-container{
+  margin: 5.5em 0 2em 0;
+  min-height:450px;
+  .home {
+    header {
+      border: 1px solid #E5E5E5;
+    }
+    .image{
+      position:relative;
+      min-height:20em;
+      .top-header,
+      .bottom-header{
+        position:absolute;
+        max-width:50%;
+        margin:0;
+        text-align:justify;
+        font-weight:800;
+      }
+      .top-header {
+        left:.5em;
+        top:.5em;
+      }
+      .bottom-header {
+        right:.5em;
+        bottom:.5em;
+      }
+      img {
+        width:100%;
+        opacity:.5;
+      }
+    }
+    .video, .thought-leadership{
+      text-align: center;
+      height:24em;
+      background-color: #FFF;
+      margin-top:2em;
+      padding:0;
+    }
+    .clients, .job-seekers{
+      height:15em;
+    }
+    .featured-jobs, .jobs-by-email{
+      height:20em;
+      padding: 0 1em;
+      overflow-y: auto;
+      background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 66%);
+      .form-group{
+        margin-bottom: .75em;
+      }
+    }
+    .capsule {
+      background-color: #FFF;
+      display:inline-block;
+      text-decoration: none;
+      margin:.5em;
+      width:100%;
+      overflow:hidden;
+      border: 1px solid #E5E5E5;
+      img{
+        width:100%;
+        height:20em;
+        -webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+      }
+      &:hover{
+        img{
+          -webkit-transform:scale(1.25); /* Safari and Chrome */
+          -moz-transform:scale(1.25); /* Firefox */
+          -ms-transform:scale(1.25); /* IE 9 */
+          -o-transform:scale(1.25); /* Opera */
+           transform:scale(1.25);
+        }
+      }
+      &.find-jobs, &.find-talents {
+        h3 {
+          position:absolute;
+          top:9em;
+          left:2em;
+          z-index:1;
+        }
+      }
+    }
+  }
+  .contact-us{
+    padding: 1em 0;
+    .address{
+      padding: .5em 1.5em;
+    }
+    .map{
+      height:320px;
+      .marker{
+        position:absolute;
+        width: 2em;
+        height: 2em;
+        left: -1em;
+        top: -1em;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+    }
+  }
+}
+
+.footer-container{
+  border-top: 1px solid #E5E5E5;
+  padding: 1em 0;
+}
