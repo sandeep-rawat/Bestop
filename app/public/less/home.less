@@ -70,8 +70,7 @@
 		    		display:none;
 		    		width:16em;
 		    		position:absolute;
-		    		left:2em;
-		    		top:4em;
+		    		top:3em;
 		    		text-align:justify;
 		    		color:#000;
 	    		}
@@ -94,12 +93,18 @@
 				width:50%;
 				h3{
 					top:.5em;
+					div:last-child{
+				 		left:1.25em;
+				 	}
 				}
 			}
 			&.in-house-research{
 				width:50%;
 				h3{
 					left:1em;
+					div:last-child{
+				 		left:.75em;
+				 	}
 				}
 			}
 			&.top-grading{
@@ -110,7 +115,8 @@
 					color:#FFD700;
 					div:last-child{
 				 		width:20em;
-				 		left:1em;
+				 		top:4em;
+				 		left:0;
 				 	}
 				}
 			}
@@ -121,10 +127,9 @@
 				 left:1em;
 				 div:last-child{
 				 		width:12em;
-				 		left:1.5em;
+				 		left:.75em;
 				 	}
 				}
-
 			}
 		}
 	}
@@ -132,7 +137,7 @@
 		padding:2em;
 		background-color:#FAFAFA;
 		.capsule{
-			height:18em;
+			height:16em;
 			display:flex;
 			border: 1px solid #E5E5E5;
 			h3 {
