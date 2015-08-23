@@ -23,8 +23,10 @@ module.exports = React.createClass({
               <HomeThoughtLeadership />
             </div>
           </div>
-          <HomeMainCapsules/>
-          <HomeFindTalentsJobs/>
+        </div>  
+        <HomeMainCapsules/>
+        <HomeFindTalentsJobs/>
+        <div className="container jobs">
           <div className="row">
             <div className="col-xs-12 col-sm-5 col-sm-offset-1">
               <FeaturedJobs />
