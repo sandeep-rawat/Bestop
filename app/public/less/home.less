@@ -1,0 +1,164 @@
+.home{
+	header {
+    border: 1px solid #E5E5E5;
+    .image{
+      position:relative;
+      min-height:20em;
+      .top-header,
+      .bottom-header{
+        position:absolute;
+        max-width:50%;
+        margin:0;
+        text-align:justify;
+        font-weight:800;
+      }
+      .top-header {
+        left:.5em;
+        top:.5em;
+      }
+      .bottom-header {
+        right:.5em;
+        bottom:.5em;
+      }
+      img {
+        width:100%;
+        opacity:.5;
+      }
+    }
+  }  
+	.capsule {
+    a {
+	    background-color: #FFF;
+	    display:block;
+	    text-decoration: none;
+	    overflow:hidden;
+	    img{
+	      width:100%;
+	      -webkit-transition: all .5s ease; /* Safari and Chrome */
+	      -moz-transition: all .5s ease; /* Firefox */
+	      -ms-transition: all .5s ease; /* IE 9 */
+	      -o-transition: all .5s ease; /* Opera */
+	      transition: all .5s ease;
+	    }
+	    &:hover{
+	      img{
+	        -webkit-transform:scale(1.25); /* Safari and Chrome */
+	        -moz-transform:scale(1.25); /* Firefox */
+	        -ms-transform:scale(1.25); /* IE 9 */
+	        -o-transform:scale(1.25); /* Opera */
+	         transform:scale(1.25);
+	      }
+	    }
+	  }
+	}
+	.main-capsules{
+		.capsule{
+			position:relative;
+			padding:.5em;
+			width:50%;
+			float:left;
+			a{
+				border: 1px solid #E5E5E5;
+	    	width: 100%;
+	    	h3{
+	    		position:absolute;
+	    		z-index:1;
+	    		margin:.125em;
+        	div:last-child{
+		    		display:none;
+		    		width:16em;
+		    		position:absolute;
+		    		left:1em;
+		    		top:3em;
+		    		text-align:justify;
+		    		color:#000;
+	    		}
+	    	}	
+	    	&:hover{
+					h3{
+						div:first-child{
+							display:none;
+						}
+						div:last-child{
+							display:block;
+						}
+					}
+					img{
+						opacity:.2;
+					}
+				}
+			}
+			&.digital-projects{
+				width:50%;
+				h3{
+					top:.5em;
+				}
+			}
+			&.in-house-research{
+				width:50%;
+				h3{
+					left:1em;
+				}
+			}
+			&.top-grading{
+				width:60%;
+				h3{
+					left: 1.5em;
+					top: .75em;
+					color:#FFD700;
+					div:last-child{
+				 		width:20em;
+				 		top:4em;
+				 		left:0;
+				 	}
+				}
+			}
+			&.social-responsibility{
+				width:40%;
+				h3 {
+				 color:#A0522D;
+				 left:1em;
+				 div:last-child{
+				 		width:12em;
+				 		left:.75em;
+				 	}
+				}
+
+			}
+		}
+	}
+	.find-talents-jobs-capsules{
+		margin:2em 0;
+		.capsule{
+			height:16em;
+			display:flex;
+			border: 1px solid #E5E5E5;
+			h3 {
+      	position:absolute;
+      	z-index:1;
+    	}
+			&.find-talents{
+				h3{
+					margin:.125em 0;
+					top:0;
+					left:1em;
+				}
+			}
+			&.find-jobs{
+				h3{
+					margin:.25em 0;
+					bottom:.25em;
+					left:1em;
+				}
+			}
+		}
+
+	}
+	.video, .thought-leadership{
+    text-align: center;
+    height:24em;
+    background-color: #FFF;
+    margin-top:2em;
+    padding:0;
+  }
+}
